@@ -4,6 +4,8 @@ Il permet à un user de renseigner la quantité de Bitcoins qu'il possède.<br/>
 Une requête ajax est faite à intervalle régulier de façon à afficher la valeur en dollars
 de son portfolio. </br>
 
+Un message est ensuite affiché suivant la valeur en dollar du porfolio de l'user.
+
 ## Installation
 
 `mkdir react_hooks_basics && cd cd react_hooks_basics`
