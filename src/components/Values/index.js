@@ -43,7 +43,7 @@ const Values = () => {
   // et en premier argument la fonction à executer quand au moins une des variables écoutées a changé.
   // Dans cette exemple, on affiche un message 'vous etes riches' si la valeur dollar est > 1000, autrement on affiche 'vous êtes pauvre'
   useEffect(() => {
-    setIsWealthy(dollarValue > 1000);
+    setIsWealthy(dollarValue > 10000);
   }, [dollarValue])
 
   // Tu peux créer autant de hooks que tu veux. Tous les hooks vont s'executer obligatoirement une premiere fois au démarrage de l'app (comme l'ancien

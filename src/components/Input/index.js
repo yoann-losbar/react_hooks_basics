@@ -19,8 +19,8 @@ const Input = () => {
 
   // La fonction handler. Tous les handlers doivent être dans le scope du hook, pour pouvoir accéder aux variables de state du hook.
   const handleInputChange = (event) => {
-    const newBitcoinAmount = parseInt(event.target.value);
-    if (Number.isNaN(newBitcoinAmount)) {
+    const newBitcoinAmount = event.target.value;
+    if (Number.isNaN(parseInt(newBitcoinAmount))) {
       // Le montant en Bitcoin n'est pas valide, j'utilise donc le setter fourni par useState pour mettre isInputValid à false
       setIsInputValid(false);
       return false;
