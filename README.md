@@ -6,7 +6,9 @@ de son portfolio. </br>
 
 ## Installation
 
-`git clone [repo]`
+`mkdir react_hooks_basics && cd cd react_hooks_basics`
+
+`git clone git@github.com:yoann-losbar/react_hooks_basics.git ./`
 
 `npm install`
 
