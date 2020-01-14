@@ -49,6 +49,7 @@ const Values = () => {
   // Tu peux créer autant de hooks que tu veux. Tous les hooks vont s'executer obligatoirement une premiere fois au démarrage de l'app (comme l'ancien
   // componentDidMount) et s'éxecuteront ensuite seulement quand au moins une des variables écoutées a changé.
   // Si l'array en second argument est vide, comme ci dessous, le hook s'executera une seule fois au demarrage de l'app, puis plus jamais.
+  // Dans cette exemple, on a besoin de créer une seule fois le job qui va fetcher toutes les N secondes le nouveau taux de change BTC/USD
   useEffect(() => {
     fetchDollarPerBitcoinPrice();
     setInterval(() => {
